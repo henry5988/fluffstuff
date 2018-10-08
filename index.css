@@ -1,0 +1,183 @@
+html{
+    font-size: 62.5%;
+}
+body{
+    height: 100vh;
+    background-image: linear-gradient(#f5f5f5, white);
+    margin-left: 25vw;
+    margin-right: 25vw;
+}
+
+/* Style the header */
+.header {
+    padding: 10px 16px;
+    /*background: #555;*/
+    color: #f1f1f1;
+}
+
+/* Page content */
+.content {
+    padding: 16px;
+}
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+    padding-top: 102px;
+}
+
+/*Style Header Menu*/
+.headerMenu{
+    float:right;
+}
+
+/*Logo properties*/
+#fluffLogo{
+    height:60px;
+    width: 60px;
+}
+
+/*Cart*/
+#cart{
+    width:40px;
+    height:40px;
+    vertical-align: bottom;
+}
+
+/*Main Panel*/
+.mainPanel{
+    background-image: url("img/homepage_main.jpg");
+    /* To make background image behave like a normal image*/
+    width: 50vw;
+    height: 63.2vh;
+    background-size:contain;
+    background-repeat:no-repeat;
+    box-shadow: 0px 5px 2px 1px rgba(0, 0, 32, 0.2);
+}
+
+#mainPanelHead{
+    font-family: Georgia, Arial, sans-serif;
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 4px #000000;
+    font-size: 2vw;
+}
+
+.mainText{
+    height: 80%;
+}
+
+/*About Us*/
+#aboutUs{
+    margin: 50px;
+    display: flex;
+    align-items: center;
+}
+
+#aboutUsText{
+    flex :50%;
+}
+
+#aboutUsImg{
+    padding: 30px;
+    flex:50%;
+    width: 15vw;
+    height: 15vh;
+    float: right;
+}
+
+/*Footer*/
+.footer {
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    border-top: #c1c1c1;
+    border-top-width: 2px;
+    border-top-style: solid;
+    margin-top:70px;
+}
+
+.footerText{
+    font-family: Arial, sans-serif;
+    color: #3b526e;
+    font-size: 1vw;
+}
+
+/*Page elements*/
+button{
+    display: inline-block;
+    border: none;
+    padding: 1rem 1rem;
+    margin: 0;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    transition: background 250ms ease-in-out,
+    transform 150ms ease;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.menuButton {
+    background: rgba(0, 105, 237, 0);
+}
+
+.block{
+    display: block;
+}
+
+.findYours{
+    height:20%;
+}
+
+#findYoursButton{
+    background: #52c1ca;
+    color: white;
+    font-size: 1.6rem;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.24);
+    border: none;
+    border-radius: 45px;
+}
+
+button:hover,
+button:focus {
+    background: #7b8389;
+}
+
+button:focus {
+    outline: 1px solid #fff;
+    outline-offset: -4px;
+}
+
+button:active {
+    transform: scale(0.99);
+}
+
+/*Attributes*/
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom{
+    bottom: 0;
+}
+
+.mainFont{
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    color: #3e5570;
+    font-size: 1vw;
+}
+
+.mainHeadFont{
+    font-size: 2vw;
+}
